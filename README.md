@@ -17,6 +17,9 @@ CREATE TABLE [dbo].[new_employees] (
     [first_name] VARCHAR (30) NOT NULL,
     [last_name] VARCHAR (30) NOT NULL
 );
+
+ALTER TABLE [dbo].[new_employees]
+   ADD CONSTRAINT PK_employee_id PRIMARY KEY CLUSTERED (id);
 ```
 
 ## Create Logic App
